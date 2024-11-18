@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Asegúrate de usar el idioma correcto -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="for.css"> <!-- Solo se incluye una vez -->
+    <link rel="stylesheet" href="Pagina.css"> <!-- Solo se incluye una vez -->
+    <title>Formulario de Muebles</title>
+</head>
+<body>
+  <header class="header1">
+    <nav>
+      <div class="nav__bar">
+        <div class="logo">
+          <a href="#"><img src="Imagenes/logo-removebg-preview.png" alt="logo" /></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line" ></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+            <li><a href="inventario.html">Productos</a></li>
+            <li><a href="mvv.html">Nosotros</a></li>
+            <li><a href="contact.html">Contactanos</a></li>
+      </ul>
+      <button class="btn nav__btn">Cotiza</button>
+    </nav>
+  </header>
+    <div class="form-container">
+        <h1>Contiza Tu Mueble Ideal!!</h1>
+        <form id="furnitureForm">
+            <!-- Nombre -->
+            <label for="name">Nombres:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Número de WhatsApp -->
+            <label for="whatsapp">Número de WhatsApp:</label>
+            <input type="tel" id="whatsapp" name="whatsapp" required>
+
+            <!-- Departamento -->
+            <label for="department">Departamento:</label>
+            <select id="department" name="department" required>
+                <option value="">Selecciona tu departamento</option>
+                <option value="Amazonas">Amazonas</option>
+                <option value="Antioquia">Antioquia</option>
+                <option value="Arauca">Arauca</option>
+                <option value="Atlántico">Atlántico</option>
+                <option value="Bolívar">Bolívar</option>
+                <option value="Boyacá">Boyacá</option>
+                <option value="Caldas">Caldas</option>
+                <option value="Caquetá">Caquetá</option>
+                <option value="Casanare">Casanare</option>
+                <option value="Cauca">Cauca</option>
+                <option value="Cesar">Cesar</option>
+                <option value="Chocó">Chocó</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Cundinamarca">Cundinamarca</option>
+                <option value="Guainía">Guainía</option>
+                <option value="Guaviare">Guaviare</option>
+                <option value="Huila">Huila</option>
+                <option value="La Guajira">La Guajira</option>
+                <option value="Magdalena">Magdalena</option>
+                <option value="Meta">Meta</option>
+                <option value="Nariño">Nariño</option>
+                <option value="Norte de Santander">Norte de Santander</option>
+                <option value="Putumayo">Putumayo</option>
+                <option value="Quindío">Quindío</option>
+                <option value="Risaralda">Risaralda</option>
+                <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+                <option value="Santander">Santander</option>
+                <option value="Sucre">Sucre</option>
+                <option value="Tolima">Tolima</option>
+                <option value="Valle del Cauca">Valle del Cauca</option>
+                <option value="Vaupés">Vaupés</option>
+                <option value="Vichada">Vichada</option>
+                <!-- Aquí irían las opciones -->
+            </select>
+
+            <!-- Ciudad -->
+            <label for="city">Ciudad:</label>
+            <select id="city" name="city" required>
+                <option value="">Selecciona tu ciudad</option>
+            </select>
+
+            <!-- Nombre del mueble -->
+            <label for="furniture">Nombre del Mueble:</label>
+            <input type="text" id="furniture" name="furniture" required>
+
+            <!-- Categoría del mueble -->
+            <label for="category">Categoría del Mueble:</label>
+            <select id="category" name="category" required>
+                <option value="">Selecciona una categoría</option>
+                <option value="Alcobas">Alcobas</option>
+                <option value="Salas">Salas</option>
+                <option value="Comedores">Comedores</option>
+            </select>
+
+            <!-- Método de Pago -->
+            <label for="paymentMethod">Método de Pago:</label>
+            <select id="paymentMethod" name="paymentMethod" required>
+                <option value="">Selecciona el método de pago</option>
+                <option value="Contado">Contado</option>
+                <option value="Credito">Crédito</option>
+            </select>
+
+            <!-- Opciones de pago Contado -->
+            <div id="paymentOptionContado" class="payment-options hidden">
+                <label for="paymentOptionContado">Selecciona opción de pago contado:</label>
+                <select id="paymentOptionContado">
+                    <option value="Efectivo">Efectivo</option>
+                    <option value="Transferencia">Transferencia Bancaria</option>
+                </select>
+            </div>
+
+            <!-- Opciones de pago Crédito -->
+            <div id="paymentOptionCredito" class="payment-options hidden">
+                <label for="paymentOptionCredito">Selecciona opción de pago crédito:</label>
+                <select id="paymentOptionCredito">
+                  <option value="Sistecredito">Ninguno</option>
+                    <option value="Addi">Addi</option>
+                    <option value="Sistecredito">Sistecredito</option>
+                    <option value="TarjetaCredito">Tarjeta de Crédito</option>
+                </select>
+            </div>
+
+            <!-- Botón de Enviar -->
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="formulario.js"></script>
+</body>
+</html>
